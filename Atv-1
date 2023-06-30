@@ -1,0 +1,58 @@
+Exercicio 1:
+
+1. IP
+O protocolo IP, do termo em inglês Internet Protocol (Protocolo de Internet) faz parte da camada de internet e é um dos protocolos mais importantes da web. Ele permite a elaboração e transporte dos pacotes de dados, porém sem assegurar a sua entrega.
+
+2. TCP/IP
+Trata-se do acrônimo de dois protocolos combinados. São eles o TCP (Transmission Control Protocol — Protocolo de Controle de Transmissão) e IP (Internet Protocol — Protocolo de Internet).
+
+3. HTTP/HTTPS
+O protocolo HTTP (Hypertext Transfer Protocol — Protocolo de Transferência de Hipertexto) é usado para navegação em sites da internet. Funciona como uma conexão entre o cliente (browser) e o servidor (site ou domínio).
+
+4. FTP
+Significa Protocolo de Transferência de Arquivos (do inglês File Transfer Protocol). É a forma mais simples para transferir dados entre dois computadores utilizando a rede. O protocolo FTP funciona com dois tipos de conexão: a do cliente (computador que faz o pedido de conexão) e do servidor (computador que recebe o pedido de conexão e fornece o arquivo ou documento solicitado pelo cliente).
+
+5. SFTP
+Simple Transfer Protocol (Protocolo de Transferência Simples de Arquivos) consiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos.
+
+
+6. SSH
+SSH (Secure Shell, já citado acima) é um dos protocolos específicos de segurança de troca de arquivos entre cliente e servidor. Funciona a partir de uma chave pública. Ela verifica e autentica se o servidor que o cliente deseja acessar é realmente legítimo.
+
+
+7. SSL
+O protocolo SSL (Secure Sockets Layer — Camada de Portas de Segurança) permite a comunicação segura entre os lados cliente e servidor de uma aplicação web, por meio de uma confirmação da identidade de um servidor e a verificação do seu nível de confiança.
+
+Exercicio 2:
+
+A arquitetura cliente servidor é uma arquitetura de aplicação distribuída, ou seja, na rede existem os fornecedores de recursos ou serviços a rede, que são chamados de servidores, e existem os requerentes dos recursos ou serviços, denominados clientes.O cliente não compartilha nenhum de seus recursos com o servidor, mas no entanto ele solicita alguma função do servidor, sendo ele, o cliente, responsável por iniciar a comunicação com o servidor, enquanto o mesmo aguarda requisições de entrada.
+
+
+Exercicio 3:
+
+O Protocolo de Transferência de Hipertexto (protocolo HTTP) é usado principalmente em redes baseadas em IP para a transmissão de páginas web de um servidor para o navegador. Ele funciona sem criptografia e não se limita a aplicativos.
+
+Exercicio 4:
+
+A) 
+GET: Solicita recursos do servidor e envia parâmetros na URL. É idempotente.
+POST: Envia dados para o servidor, geralmente para criar um novo recurso. Os dados são enviados no corpo da requisição. Não é idempotente.
+PUT: Atualiza um recurso existente no servidor. Os dados atualizados são enviados no corpo da requisição. É idempotente.
+
+B)
+200 OK: Indica que a requisição foi bem-sucedida e os dados solicitados são retornados.
+404 Not Found: Indica que o recurso solicitado não foi encontrado no servidor.
+500 Internal Server Error: Indica que ocorreu um erro interno no servidor durante o processamento da requisição.
+
+Exercicio 5:
+Para enviar informações em tempo real do servidor para o cliente em aplicações web como o Gmail ou Instagram, podem ser usadas as seguintes estratégias:
+
+Polling: O cliente consulta periodicamente o servidor em intervalos regulares para verificar se há novas informações disponíveis. Pode resultar em muitas requisições ao servidor.
+
+Long polling: O cliente faz uma requisição e mantém a conexão aberta por mais tempo, esperando que o servidor envie as novas informações. Reduz a quantidade de requisições, mas ainda pode ter atrasos.
+
+WebSockets: Estabelece uma conexão bidirecional persistente entre o cliente e o servidor, permitindo que o servidor envie informações assim que estiverem disponíveis. É eficiente e fornece atualizações em tempo real com baixa latência.
+
+Server-Sent Events (SSE): Permite ao servidor enviar eventos assíncronos para o cliente por meio de uma conexão HTTP persistente. O servidor envia mensagens para o cliente conforme necessário.
+
+
